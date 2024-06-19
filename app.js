@@ -19,6 +19,14 @@ app.get('/register', (req, res) => {
   }
 })
 
+app.get('/login', (req, res) => {
+  try {
+    res.send('login berhasil')
+  } catch(err) {
+    console.log(err)
+  }
+})
+
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
