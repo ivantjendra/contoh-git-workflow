@@ -30,6 +30,14 @@ app.post('/posts', (req, res) => {
 app.get('/posts', (req, res) => {
   try {
     res.send('get post berhasil')
+   } catch(err) {
+    console.log(err)
+  }
+})
+
+app.get('/login', (req, res) => {
+  try {
+    res.send('login berhasil')
   } catch(err) {
     console.log(err)
   }
