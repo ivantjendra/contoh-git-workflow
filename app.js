@@ -39,7 +39,7 @@ app.get('/login', (req, res) => {
   try {
     res.send('login berhasil')
   } catch(err) {
-    console.log(err)
+    console.log(err, '<00---- jisoo cakep')
   }
 })
 
