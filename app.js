@@ -19,6 +19,22 @@ app.get('/register', (req, res) => {
   }
 })
 
+app.post('/posts', (req, res) => {
+  try {
+    res.send('post post berhasil')
+  } catch(err) {
+    console.log(err)
+  }
+})
+
+app.get('/posts', (req, res) => {
+  try {
+    res.send('get post berhasil')
+   } catch(err) {
+    console.log(err)
+  }
+})
+
 app.get('/login', (req, res) => {
   try {
     res.send('login berhasil')
